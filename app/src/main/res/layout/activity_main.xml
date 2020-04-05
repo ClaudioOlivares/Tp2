@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TVdolares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+
+        android:layout_marginTop="34dp"
+        android:text="Dolares" />
+
+    <TextView
+        android:id="@+id/TVeuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="146dp"
+        android:text="Euros" />
+
+    <EditText
+        android:id="@+id/ETeuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVeuros"
+
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="ingrese dolares a convertir"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/ETdolares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVdolares"
+
+        android:layout_marginTop="25dp"
+
+        android:ems="10"
+        android:hint="ingrese euros a convertir"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/ETresultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RGopciones"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="70dp" />
+
+    <RadioGroup
+        android:id="@+id/RGopciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETeuros"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginTop="29dp">
+
+
+        <RadioButton
+            android:id="@+id/RBdolares"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Clickeado"
+            android:text="Dolares a Euros" />
+
+        <RadioButton
+            android:id="@+id/RBeuros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Clickeado"
+            android:text="Euros a Dolares" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginBottom="224dp"
+        android:onClick="HacerCuenta"
+        android:text="Convertir" />
+</RelativeLayout>
